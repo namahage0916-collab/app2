@@ -3,16 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>app2</title>
-
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <h1>app2</h1>
+    <div id="messageWrapper">
+      <header id="chatHeader">
+        <button class="headerButton">‹</button>
 
-    <button id="testButton">ボタン</button>
+        <div class="chatTitle">
+          <div class="chatName">調査用連絡グループ</div>
+          <div class="chatMember">3人</div>
+        </div>
+
+        <button class="headerButton">☰</button>
+      </header>
+
+      <main id="chatMain">
+        <div class="dateLabel">今日</div>
+
+        <div class="messageRow other">
+          <div class="userIcon">?</div>
+          <div class="messageBlock">
+            <div class="userName">不明な送信者</div>
+            <div class="bubble">……聞こえていますか。</div>
+          </div>
+        </div>
+
+        <div class="messageRow other">
+          <div class="userIcon">?</div>
+          <div class="messageBlock">
+            <div class="userName">不明な送信者</div>
+            <div class="bubble">この画面を閉じないでください。</div>
+          </div>
+        </div>
+
+        <div class="messageRow me">
+          <div class="messageBlock">
+            <div class="bubble">あなたは誰？</div>
+            <div class="messageInfo">既読　21:15</div>
+          </div>
+        </div>
+
+        <div class="messageRow other">
+          <div class="userIcon">?</div>
+          <div class="messageBlock">
+            <div class="userName">不明な送信者</div>
+            <div class="bubble">まだ、名前は言えません。</div>
+          </div>
+        </div>
+      </main>
+
+      <footer id="chatInputArea">
+        <button class="plusButton">＋</button>
+        <div class="fakeInput">メッセージ入力</div>
+        <button class="sendButton">▶</button>
+      </footer>
+    </div>
 
     <script src="js/script.js"></script>
   </body>
